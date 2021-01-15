@@ -14,6 +14,10 @@
 		A20A4D1F25A8ABEE0051FB09 /* Ejercicio02_Agenda_de_Contactos.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A20A4D1D25A8ABEE0051FB09 /* Ejercicio02_Agenda_de_Contactos.xcdatamodeld */; };
 		A20A4D2125A8ABF00051FB09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A20A4D2025A8ABF00051FB09 /* Assets.xcassets */; };
 		A20A4D2425A8ABF00051FB09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A20A4D2225A8ABF00051FB09 /* LaunchScreen.storyboard */; };
+		A20A4D2F25A8AD690051FB09 /* ContactoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20A4D2E25A8AD690051FB09 /* ContactoModel.swift */; };
+		A20A4D3125A8AF3C0051FB09 /* AddContactoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20A4D3025A8AF3C0051FB09 /* AddContactoViewController.swift */; };
+		A20A4D3325A8AF560051FB09 /* VerContactoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20A4D3225A8AF560051FB09 /* VerContactoViewController.swift */; };
+		A2F6441025B1FA4200D2CC56 /* PersonaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F6440F25B1FA4200D2CC56 /* PersonaTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		A20A4D2025A8ABF00051FB09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A20A4D2325A8ABF00051FB09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A20A4D2525A8ABF00051FB09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A20A4D2E25A8AD690051FB09 /* ContactoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactoModel.swift; sourceTree = "<group>"; };
+		A20A4D3025A8AF3C0051FB09 /* AddContactoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactoViewController.swift; sourceTree = "<group>"; };
+		A20A4D3225A8AF560051FB09 /* VerContactoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerContactoViewController.swift; sourceTree = "<group>"; };
+		A2F6440F25B1FA4200D2CC56 /* PersonaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonaTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +66,10 @@
 		A20A4D1325A8ABEE0051FB09 /* Ejercicio02-Agenda de Contactos */ = {
 			isa = PBXGroup;
 			children = (
+				A20A4D2D25A8ACF10051FB09 /* Controladores */,
+				A20A4D2B25A8ACC20051FB09 /* Modelos */,
 				A20A4D1425A8ABEE0051FB09 /* AppDelegate.swift */,
 				A20A4D1625A8ABEE0051FB09 /* SceneDelegate.swift */,
-				A20A4D1825A8ABEE0051FB09 /* ViewController.swift */,
 				A20A4D1A25A8ABEE0051FB09 /* Main.storyboard */,
 				A20A4D2025A8ABF00051FB09 /* Assets.xcassets */,
 				A20A4D2225A8ABF00051FB09 /* LaunchScreen.storyboard */,
@@ -68,6 +77,25 @@
 				A20A4D1D25A8ABEE0051FB09 /* Ejercicio02_Agenda_de_Contactos.xcdatamodeld */,
 			);
 			path = "Ejercicio02-Agenda de Contactos";
+			sourceTree = "<group>";
+		};
+		A20A4D2B25A8ACC20051FB09 /* Modelos */ = {
+			isa = PBXGroup;
+			children = (
+				A20A4D2E25A8AD690051FB09 /* ContactoModel.swift */,
+				A2F6440F25B1FA4200D2CC56 /* PersonaTableViewCell.swift */,
+			);
+			name = Modelos;
+			sourceTree = "<group>";
+		};
+		A20A4D2D25A8ACF10051FB09 /* Controladores */ = {
+			isa = PBXGroup;
+			children = (
+				A20A4D1825A8ABEE0051FB09 /* ViewController.swift */,
+				A20A4D3025A8AF3C0051FB09 /* AddContactoViewController.swift */,
+				A20A4D3225A8AF560051FB09 /* VerContactoViewController.swift */,
+			);
+			name = Controladores;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,8 +169,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2F6441025B1FA4200D2CC56 /* PersonaTableViewCell.swift in Sources */,
 				A20A4D1925A8ABEE0051FB09 /* ViewController.swift in Sources */,
+				A20A4D3125A8AF3C0051FB09 /* AddContactoViewController.swift in Sources */,
+				A20A4D3325A8AF560051FB09 /* VerContactoViewController.swift in Sources */,
 				A20A4D1525A8ABEE0051FB09 /* AppDelegate.swift in Sources */,
+				A20A4D2F25A8AD690051FB09 /* ContactoModel.swift in Sources */,
 				A20A4D1725A8ABEE0051FB09 /* SceneDelegate.swift in Sources */,
 				A20A4D1F25A8ABEE0051FB09 /* Ejercicio02_Agenda_de_Contactos.xcdatamodeld in Sources */,
 			);
@@ -297,7 +329,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "marcosledesma.Ejercicio02-Agenda-de-Contactos";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -314,7 +346,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "marcosledesma.Ejercicio02-Agenda-de-Contactos";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
