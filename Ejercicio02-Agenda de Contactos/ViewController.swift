@@ -26,10 +26,20 @@ class ViewController: UIViewController, ObtenerContactoDelegate, UITableViewData
         return fila
     }
     
-    func obtenerContacto(contacto: ContactoModel, emisor: AddContactoViewController) {
+    func obtenerContacto(contacto: ContactoModel) {
         contactos.append(contacto)
-        emisor.dismiss(animated: true)
+        //emisor.dismiss(animated: true)
+        navigationController?.popViewController(animated: true)
         actualizaResumen()
+    }
+    
+    // Definir estilos que aparecen al hacer slide en una fila
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        // 
+        if editingStyle == .delete {
+            contactos.remove(at: indexPath.row)
+            tabla.reloadData()
+        }
     }
     
     // Variables de la vista (txt)

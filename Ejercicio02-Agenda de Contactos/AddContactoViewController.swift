@@ -10,7 +10,7 @@ import UIKit
 
 // Protocolo ANTES DE LA CLASE (para poder obtener el contacto de la activity AddContacto)
 protocol ObtenerContactoDelegate {
-    func obtenerContacto(contacto: ContactoModel, emisor: AddContactoViewController)
+    func obtenerContacto(contacto: ContactoModel)
 }
 
 class AddContactoViewController: UIViewController {
@@ -35,7 +35,7 @@ class AddContactoViewController: UIViewController {
             let contacto = ContactoModel(nombre: nombre, apellidos: apellidos, edad: edad)
             // Devolver el contacto a la venta que me ha llamado ( como onActivityResult)
             // en la principal para trabajar sobre el contacto
-            delegate?.obtenerContacto(contacto: contacto, emisor: self)
+            delegate?.obtenerContacto(contacto: contacto)
         }else{
             // Cuando algún dato no esté bien aparece AlertDialog
             let alerta = UIAlertController(title: "ERROR", message: "Tienes datos mal introducidos", preferredStyle: .alert)

@@ -25,11 +25,5 @@ class VerContactoViewController: UIViewController {
         lblNombre.text = contacto!.nombre
         lblApellidos.text = contacto!.apellidos
         lblEdad.text = String(contacto!.edad)
-    }
-    
-    // botón Done (cerrar esta ventana -> self dismiss)
-    @IBAction func btnDoneClick() {
-        self.dismiss(animated: true, completion: nil)
-    }
-    
+    }    
 }
